@@ -19,7 +19,7 @@ By automating the "first pass" of legal review, this tool reduces contract audit
 
 ## 4. Architecture
 
-![Architecture](./flow_adk_web.png "Optional Title")
+![Architecture](./architecture_flow_diagram.jpg "Architecture")
 
 We utilized a **Vertical Layered Multi-Agent Architecture** where agents have distinct, isolated responsibilities to ensure stability:
 
@@ -57,8 +57,8 @@ This project leverages specific technical tools to ensure Enterprise-grade relia
 ### Steps
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/contract-sentinel-pro.git](https://github.com/YOUR_USERNAME/contract-sentinel-pro.git)
-    cd contract-sentinel-pro
+    git clone https://github.com/Krrishn07/contractor-risk-sentinel.git
+    cd contract-risk-sentinel
     ```
 
 2.  **Install Dependencies**
@@ -69,7 +69,7 @@ This project leverages specific technical tools to ensure Enterprise-grade relia
 3.  **Configure API Key**
     Create a `.env` file in the root directory:
     ```text
-    GOOGLE_API_KEY=AIzaSy...YourKeyHere
+    GOOGLE_API_KEY=Your Key Here
     ```
 
 4.  **Run the Application**
@@ -83,9 +83,11 @@ This project leverages specific technical tools to ensure Enterprise-grade relia
 The codebase follows a modular Enterprise software pattern to separate Logic, UI, and Config:
 
 ```text
-contract-sentinel-pro/
+contract-risk-sentinel/
 ├── run.py                  # Application Entry Point
 ├── .env                    # API Credentials
+├── sample_contracts/       # sample contact files(PDF, .txt)
+├── requirements.txt        # Install the required libraries
 ├── src/
 │   ├── config.py           # Scoring Rules & Risk Configuration
 │   ├── tools.py            # Market Standards Knowledge Base
